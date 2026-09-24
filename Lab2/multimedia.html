@@ -3,8 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luanda - Multimédia </title>
-     <link rel="stylesheet" href="styles.css>
+    <title>Luanda - Multimédia</title>
+
+    <style>
+      .fotografias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .fotografias img {
+        width: 150px;
+        height: 80px;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+
+      .poema p:nth-child(odd) {
+        color: #444;
+        font-weight: bold;
+      }
+
+      .poema p:nth-child(even) {
+        color: #777;
+        margin-left: 10px;
+      }
+    </style>
   </head>
 
   <body>
@@ -20,42 +44,66 @@
     </header>
 
     <main>
-      <h2>Multimedia</h2>
+      <h2>Multimédia</h2>
 
-      <p>Nesta página encontra conteúdos multimedia.</p>
+      <nav>
+        <a href="#fotos">Fotografias</a>
+        <a href="#video">Vídeo</a>
+        <a href="#poesia">Poesia</a>
+      </nav>
+
+      <p>Nesta página encontra conteúdos multimédia</p>
 
       <section>
-        <h3>Fotografias</h3>
+        <h3 id="fotos">
+          <strong>Fotografias</strong>
+        </h3>
         <div class="fotografias">
-          <img src"
-          <img src"
-          <img src"
-          <img src"
-          <img src"
-          <img src"
-          <img src"
-          <img src"
-          
+          <img src="images/BNA.jpg" alt="Banco Nacional de Angola" />
+          <img src="images/Marginal.jpg" alt="Marginal de Luanda" />
+          <img src="images/Memorial.jpg" alt="Memorial Agostinho Neto" />
+          <img
+            src="images/ParoquiaSJoaquim.jpg"
+            alt="Paróquia de São Joaquim"
+          />
+          <img src="images/PortoLuanda.jpg" alt="Porto de Luanda" />
+          <img src="images/Cazenga.jpg" alt="Cazenga, Luanda" />
+          <img src="images/Kilamba.jpg" alt="Kilamba,Luanda" />
+          <img
+            src="images/Intercontinental.jpg"
+            alt="Hotel Intercontinental, Luanda"
+          />
         </div>
       </section>
-        <img
-          src="imagens/luanda1.jpg"
-          alt="Vista de Luanda"
-          width="400"
-          height="250"
-        />
 
-        <img
-          src="imagens/luanda2.jpg"
-          alt="Cidade de Luanda"
+      <section>
+        <h3 id="video">Vídeo</h3>
+
+        <iframe
           width="400"
-          height="250"
-        />
+          height="300"
+          src="https://www.youtube.com/embed/PMKgLWYR5o4?si=87NJGtTql5bmy0V_"
+          title="Vídeo sobre Luanda"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h3 id="poesia">Poesia</h3>
+
+        <div class="poema">
+          <p>Luanda desperta com luz dourada.</p>
+          <p>O mar abraça a cidade em silêncio.</p>
+          <p>As ruas respiram histórias antigas.</p>
+          <p>E o povo caminha com esperança.</p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>DIW 2026</p>
+      <p>Luanda, 2026</p>
     </footer>
   </body>
 </html>
