@@ -5,100 +5,48 @@
 
 body {
     background-color: white;
-}
-
-.pagina {
-    width: 80%;
-    margin: 20px auto;
-    border: 3px solid black;
-
     display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
-header {
-    background-color: teal;
-
-    display: flex;
+header{
+    background-color: blue;
+    color:white;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 25px 15px;
-
-    color: white;
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-header p {
-    font-size: 14px;
 }
 
 main {
     display: grid;
-
     grid-template-columns: 3fr 1fr;
-
-    min-height: 560px;
 }
-
-.conteudo {
+ section {
     background-color: orangered;
-
-    padding: 10px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
+    padding: 1fr;
 }
 
-.cartao {
+article {
     background-color: coral;
-
     border: 2px solid firebrick;
-
-    padding: 30px 12px;
-
+    padding: 1fr;
     color: white;
-}
 
-.cartao h2 {
-    margin-bottom: 15px;
-
-    font-size: 20px;
-}
-
-.cartao p {
-    font-size: 14px;
-}
-
-.cartao ul {
-    padding-left: 20px;
-    font-size: 14px;
+    display: grid;
+    align-content: center;
 }
 
 aside {
     background-color: limegreen;
-
     color: white;
-    padding: 25px 10px;
-}
+    padding: 2fr;
 
-aside h2 {
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-
-aside p {
-    font-size: 14px;
+    display: grid;
+    align-content: start;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 1fr;
 }
