@@ -11,6 +11,9 @@ body {
     width: 80%;
     margin: 20px auto;
     border: 3px solid black;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -26,11 +29,11 @@ header {
 }
 
 header h1 {
-    font-size:30px;
+    font-size: 28px;
 }
 
 header p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 main {
@@ -38,6 +41,7 @@ main {
 
     grid-template-columns: 3fr 1fr;
 
+    min-height: 560px;
 }
 
 .conteudo {
@@ -53,6 +57,8 @@ main {
 
 .cartao {
     background-color: coral;
+
+    border: 2px solid firebrick;
 
     padding: 30px 12px;
 
