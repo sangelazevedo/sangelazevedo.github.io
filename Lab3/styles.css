@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 header {
   background-color: green;
   color: white;
@@ -41,6 +42,8 @@ header nav a {
   color: white;
 }
 
+
+
 .multimedia-fotos {
   height: 100vh;
   background-color: lightblue;
@@ -72,6 +75,8 @@ header nav a {
 }
 
 
+/* MULTIMÉDIA - VÍDEO */
+
 .multimedia-video {
   height: 100vh;
   background-color: lightgreen;
@@ -86,6 +91,13 @@ header nav a {
 .multimedia-video h3 {
   margin-bottom: 20px;
 }
+
+.multimedia-video iframe {
+  max-width: 100%;
+}
+
+
+/* MULTIMÉDIA - POESIA */
 
 .multimedia-poesia {
   height: 100vh;
@@ -107,6 +119,9 @@ header nav a {
   margin-left: 10px;
 }
 
+
+/* IMAGEM DE LUANDA */
+
 .imagem-luanda {
   position: relative;
   width: 100%;
@@ -119,6 +134,7 @@ header nav a {
 
 .frase {
   position: absolute;
+
   top: 40%;
   left: 10%;
 
@@ -126,6 +142,9 @@ header nav a {
   font-size: 4vw;
   font-weight: bold;
 }
+
+
+/* LOCALIZAÇÃO */
 
 .localizacao {
   display: flex;
@@ -149,6 +168,8 @@ header nav a {
   border: 0;
 }
 
+
+/* INFORMAÇÕES */
 
 #info {
   display: grid;
@@ -188,6 +209,9 @@ header nav a {
   margin-bottom: 10px;
 }
 
+
+/* IMAGENS DA PÁGINA DE INFORMAÇÕES */
+
 .imagens-info {
   display: flex;
   gap: 20px;
@@ -199,6 +223,9 @@ header nav a {
   object-fit: cover;
 }
 
+
+/* FOOTER */
+
 footer {
   background-color: black;
   color: white;
@@ -209,6 +236,79 @@ footer {
 
   padding: 15px;
 }
+
+
+/* VÍDEO BACKGROUND */
+
+.video-background {
+  position: relative;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background video {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.video-texto {
+  position: relative;
+
+  color: white;
+  text-align: center;
+
+  z-index: 1;
+}
+
+.video-texto h2 {
+  font-size: 6vw;
+}
+
+.video-texto p {
+  font-size: 2vw;
+}
+
+
+/* EFEITO PARALLAX */
+
+.parallax {
+  height: 100vh;
+
+  background-image: url("images/Marginal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-texto {
+  color: white;
+  text-align: center;
+}
+
+.parallax-texto h2 {
+  font-size: 6vw;
+}
+
+.parallax-texto p {
+  font-size: 2vw;
+}
+
+
+/* RESPONSIVO */
 
 @media (max-width: 600px) {
 
@@ -227,6 +327,9 @@ footer {
   nav a {
     font-size: 1.1rem;
   }
+
+
+  /* FOTOGRAFIAS */
 
   .multimedia-fotos {
     height: auto;
@@ -248,6 +351,9 @@ footer {
     height: auto;
   }
 
+
+  /* VÍDEO */
+
   .multimedia-video {
     height: 100vh;
   }
@@ -256,13 +362,16 @@ footer {
     width: 100%;
   }
 
+
   .multimedia-poesia {
     height: 100vh;
   }
 
+
   .imagem-luanda img {
     width: 100%;
   }
+
 
   .localizacao {
     flex-direction: column;
@@ -275,6 +384,7 @@ footer {
   .mapa {
     width: 100%;
   }
+
 
   #info {
     grid-template-columns: 1fr;
@@ -289,5 +399,32 @@ footer {
     height: auto;
   }
 
-}
+  .video-background {
+    height: 100vh;
+  }
 
+  .video-texto h2 {
+    font-size: 12vw;
+  }
+
+  .video-texto p {
+    font-size: 5vw;
+  }
+
+
+  /* PARALLAX */
+
+  .parallax {
+    height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .parallax-texto h2 {
+    font-size: 12vw;
+  }
+
+  .parallax-texto p {
+    font-size: 5vw;
+  }
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luanda - Multimédia</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -19,79 +19,96 @@
       </nav>
     </header>
 
-    <main>
-      <h2>Multimédia</h2>
+    <!-- FOTOGRAFIAS -->
 
-      <nav>
-        <a href="#fotos">Fotografias</a>
-        <a href="#video">Vídeo</a>
-        <a href="#poesia">Poesia</a>
-        <a href="#imagem">Imagem</a>
-      </nav>
+    <section id="fotos" class="multimedia-fotos">
+      <h3>Fotografias</h3>
 
-      <p>Nesta página encontra conteúdos multimédia.</p>
+      <div class="fotografias">
+        <img src="images/BNA.jpg" alt="Banco Nacional de Angola" />
 
-      <section id="fotos" class="multimedia-fotos">
-        <h3>Fotografias</h3>
+        <img src="images/Marginal.jpg" alt="Marginal de Luanda" />
 
-        <div class="fotografias">
-          <img src="images/BNA.jpg" alt="Banco Nacional de Angola" />
-          <img src="images/Marginal.jpg" alt="Marginal de Luanda" />
-          <img src="images/Memorial.jpg" alt="Memorial Agostinho Neto" />
-          <img
-            src="images/ParoquiaSJoaquim.jpg"
-            alt="Paróquia de São Joaquim"/>
-          <img src="images/PortoLuanda.jpg" alt="Porto de Luanda" />
-          <img src="images/Cazenga.jpg" alt="Cazenga, Luanda" />
-          <img src="images/Kilamba.jpg" alt="Kilamba, Luanda" />
-          <img
-            src="images/Intercontinental.jpg"
-            alt="Hotel Intercontinental, Luanda/>
-        </div>
-      </section>
+        <img src="images/Memorial.jpg" alt="Memorial Agostinho Neto" />
 
-      <section id="video" class="multimedia-video">
-        <h3>Vídeo</h3>
+        <img src="images/ParoquiaSJoaquim.jpg" alt="Paróquia de São Joaquim" />
 
-        <iframe
-          width="400"
-          height="300"
-          src="https://www.youtube.com/embed/PMKgLWYR5o4?si=87NJGtTql5bmy0V_"
-          title="Vídeo sobre Luanda"
-          allowfullscreen
-        >
-        </iframe>
-      </section>
+        <img src="images/PortoLuanda.jpg" alt="Porto de Luanda" />
 
-      <section id="poesia" class="multimedia-poesia">
-        <h3>Poesia</h3>
+        <img src="images/Cazenga.jpg" alt="Cazenga, Luanda" />
 
-        <div class="poema">
-          <p>Luanda desperta com luz dourada.</p>
-          <p>O mar abraça a cidade em silêncio.</p>
-          <p>As ruas respiram histórias antigas.</p>
-          <p>E o povo caminha com esperança.</p>
-        </div>
-      </section>
-
-      <section id="imagem" class="imagem-luanda">
+        <img src="images/Kilamba.jpg" alt="Kilamba, Luanda" />
 
         <img
-          src="images/Marginal.jpg"
-          alt="Marginal de Luanda"
+          src="images/Intercontinental.jpg"
+          alt="Hotel Intercontinental, Luanda"
         />
+      </div>
+    </section>
 
-        <div class="frase">
-          <p>Luanda, onde o mar encontra a cidade.</p>
-        </div>
+    <!-- VÍDEO -->
 
-      </section>
+    <section id="video" class="multimedia-video">
+      <h3>Vídeo</h3>
 
-    </main>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SEU_VIDEO"
+        title="Vídeo sobre Luanda"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <!-- POESIA -->
+
+    <section id="poesia" class="multimedia-poesia">
+      <h3>Poesia</h3>
+
+      <div class="poema">
+        <p>Luanda, cidade junto ao mar,</p>
+        <p>onde o sol nasce sobre a baía.</p>
+        <p>Entre ruas, pessoas e histórias,</p>
+        <p>vive uma cidade cheia de energia.</p>
+      </div>
+    </section>
+
+    <!-- IMAGEM COM FRASE -->
+
+    <section id="imagem" class="imagem-luanda">
+      <img src="images/Marginal.jpg" alt="Marginal de Luanda" />
+
+      <div class="frase">
+        <p>Luanda, onde o mar encontra a cidade.</p>
+      </div>
+    </section>
+
+    <section class="video-background">
+      <video autoplay muted loop>
+        <source
+          src="videos/istockphoto-1336802630-640_adpp_is.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div class="video-texto">
+        <h2>Luanda</h2>
+
+        <p>Uma cidade junto ao mar.</p>
+      </div>
+    </section>
+
+    <section class="parallax">
+      <div class="parallax-texto">
+        <h2>Luanda</h2>
+
+        <p>Onde o mar encontra a cidade.</p>
+      </div>
+    </section>
 
     <footer>
-      <p>Luanda, 2026</p>
+      <p>DIW 2026</p>
     </footer>
   </body>
 </html>
-
