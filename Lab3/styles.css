@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: green;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+header nav {
+  background-color: green;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+header nav a {
+  color: white;
+}
+
+.multimedia-fotos {
+  height: 100vh;
+  background-color: lightblue;
+  padding: 30px;
+}
+
+.multimedia-fotos h3 {
+  margin-bottom: 30px;
+}
+
+.fotografias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fotografias img {
+  width: 150px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.fotografias img:hover {
+  width: 200px;
+  height: 120px;
+}
+
+
+.multimedia-video {
+  height: 100vh;
+  background-color: lightgreen;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.multimedia-video h3 {
+  margin-bottom: 20px;
+}
+
+.multimedia-poesia {
+  height: 100vh;
+  background-color: lightyellow;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poema p:nth-child(odd) {
+  color: #444;
+}
+
+.poema p:nth-child(even) {
+  color: #777;
+  margin-left: 10px;
+}
+
+.imagem-luanda {
+  position: relative;
+  width: 100%;
+}
+
+.imagem-luanda img {
+  width: 100%;
+  display: block;
+}
+
+.frase {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+
+  color: white;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.localizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding: 40px;
+}
+
+.texto-localizacao {
+  width: 50%;
+}
+
+.mapa {
+  width: 50%;
+}
+
+.mapa iframe {
+  width: 100%;
+  border: 0;
+}
+
+
+#info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  padding: 30px;
+}
+
+#info section {
+  background-color: white;
+  padding: 20px;
+}
+
+#info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#info th,
+#info td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+#info th {
+  background-color: green;
+  color: white;
+}
+
+#info ol {
+  padding-left: 25px;
+}
+
+#info li {
+  margin-bottom: 10px;
+}
+
+.imagens-info {
+  display: flex;
+  gap: 20px;
+}
+
+.imagens-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+
+  /* MENU */
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .multimedia-fotos {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .fotografias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotografias img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fotografias img:hover {
+    width: 100%;
+    height: auto;
+  }
+
+  .multimedia-video {
+    height: 100vh;
+  }
+
+  .multimedia-video iframe {
+    width: 100%;
+  }
+
+  .multimedia-poesia {
+    height: 100vh;
+  }
+
+  .imagem-luanda img {
+    width: 100%;
+  }
+
+  .localizacao {
+    flex-direction: column;
+  }
+
+  .texto-localizacao {
+    width: 100%;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  #info {
+    grid-template-columns: 1fr;
+  }
+
+  .imagens-info {
+    flex-direction: column;
+  }
+
+  .imagens-info img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+

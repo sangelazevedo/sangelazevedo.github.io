@@ -1,45 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sangel de Azevedo</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Primeira página Web!</h1>
-    </header>
-
-    <main>
-      <p>Eis a minha primeira página web!</p>
-      <p>
-        Na unidade curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
-          >Desenvolvimento de Interfaces Web</a
-        >
-        abordaremos as seguintes tecnologias Web &#127760;:
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-      <p>Iremos criar soluções criativas!</p>
-
+    <section id="inicio" class="hero">
       <nav>
         <ul>
-          <li><a href="Lab1/index.html">Lab 1</a></li>
-          <li><a href="Lab2/index.html">Lab 2</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#cadeira">Interfaces Web</a></li>
         </ul>
       </nav>
 
-      <img src="Lab1/images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
-    </main>
+      <div class="hero-text">
+        <h1>Interfaces Web</h1>
+        <p>Aprender, criar e desenvolver para a Web.</p>
 
-    <footer>
-      <p>Universidade Lusófona 2025</p>
-    </footer>
+        <a href="#projetos" class="botao">Ver projetos</a>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Os meus projetos</h2>
+
+      <div class="projetos-container">
+        <div class="card">
+          <h3>Laboratório 1</h3>
+
+          <p>
+            Primeiro laboratório de Interfaces Web, onde foram abordados os
+            primeiros conceitos de HTML.
+          </p>
+
+          <a href="Lab1/index.html">Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <h3>Laboratório 2</h3>
+
+          <p>
+            Projeto sobre uma cidade, utilizando HTML e CSS, usando flexbox.
+          </p>
+
+          <a href="Lab2/index.html">Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <h3>Laboratório 3</h3>
+
+          <p>
+            Desenvolvimento de uma página com HTML, CSS, recorrendo a Flexbox,
+            Grid Templates e Design responsivo.
+          </p>
+
+          <a href="Lab3/index.html">Ver projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadeira">
+      <div class="cadeira-container">
+        <div class="texto-cadeira">
+          <h2>Interfaces Web</h2>
+
+          <p>
+            A disciplina de Interfaces Web aborda os principais conceitos
+            necessários para desenvolver páginas Web.
+          </p>
+
+          <p>
+            Durante a disciplina são estudadas tecnologias como HTML, CSS e
+            JavaScript, permitindo criar páginas estruturadas, funcionais,
+            responsivas e visualmente apelativas.
+          </p>
+
+          <p>
+            O objetivo é compreender como estruturar conteúdos, organizar
+            elementos e criar interfaces que possam adaptar-se a diferentes
+            dispositivos.
+          </p>
+        </div>
+
+        <div class="wordcloud">
+          <img
+            src="images/diw.svg"
+            alt="Wordcloud da disciplina Interfaces Web"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

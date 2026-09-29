@@ -1,7 +1,186 @@
-body {
-    background-color: #b3b3b3;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
 }
 
-img {
-    width: 300px;
+.hero {
+  height: 100vh;
+  background-image: url("images/Foto\ de\ perfil.jpg");
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  position: relative;
 }
+
+nav {
+  background-color: black;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.botao {
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  display: inline-block;
+}
+
+#projetos {
+  height: 100vh;
+  background-color: lightblue;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+#projetos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  width: 250px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: black;
+  background-color: orangered;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#cadeira {
+  height: 100vh;
+  background-color: lightgreen;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.cadeira-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100%;
+}
+
+.texto-disciplina {
+  width: 50%;
+}
+
+.texto-disciplina h2 {
+  margin-bottom: 20px;
+}
+
+.texto-disciplina p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.wordcloud {
+  width: 40%;
+}
+
+.wordcloud img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-text {
+    left: 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .projetos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projetos {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .disciplina-container {
+    flex-direction: column;
+  }
+
+  .texto-disciplina {
+    width: 100%;
+  }
+
+  .wordcloud {
+    width: 100%;
+  }
+
+  #disciplina {
+    height: auto;
+    min-height: 100vh;
+  }
+
+}
+
