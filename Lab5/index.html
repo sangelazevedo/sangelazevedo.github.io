@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Luanda | Lab4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="titulo">Luanda</h1>
+    </header>
+
+    <main>
+      <h2>Alterar a cor do texto</h2>
+
+      <p id="texto">Escolhe uma das minhas cores favoritas:</p>
+
+      <button class="color" data-color="red">Vermelho</button>
+      <button class="color" data-color="blue">Azul</button>
+      <button class="color" data-color="green">Verde</button>
+      <button class="color" data-color="orange">Laranja</button>
+
+      <h2>Alterar a cor de fundo</h2>
+
+      <select id="corFundo">
+        <option value="white">Branco</option>
+        <option value="lightblue">Azul claro</option>
+        <option value="lightgreen">Verde claro</option>
+        <option value="lightpink">Rosa claro</option>
+      </select>
+
+      <h2>Botões e eventos</h2>
+
+      <button id="botao">Botão</button>
+      <button id="botaoTexto">Alterar texto</button>
+
+      <p id="mensagem">Experimenta os eventos de rato!</p>
+
+      <img
+        id="imagem"
+        src="images/Foto de perfil.jpg"
+        alt="Foto de perfil"
+        width="400"
+      />
+
+      <div id="caixa">Passa o rato por aqui!</div>
+
+      <h2>Contador com Local Storage</h2>
+
+      <p id="contador">Valor: 0</p>
+
+      <button id="incrementar">Incrementar</button>
+      <button id="decrementar">Decrementar</button>
+      <button id="reset">Reset</button>
+
+      <h2>Temporizador automático</h2>
+
+      <p id="temporizador">Tempo: 0 segundos</p>
+
+      <h2>Flexbox</h2>
+
+      <p>Escolhe a organização das bolas:</p>
+
+      <select id="direcao">
+        <option value="row">row</option>
+        <option value="row-reverse">row-reverse</option>
+        <option value="column">column</option>
+        <option value="column-reverse">column-reverse</option>
+      </select>
+
+      <div id="containerFlex">
+        <div class="bola vermelho"></div>
+        <div class="bola azul"></div>
+        <div class="bola verde"></div>
+        <div class="bola laranja"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Trabalho de JavaScript</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
