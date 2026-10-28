@@ -5,7 +5,6 @@ const nodeTotal = document.querySelector("#total");
 const nodeTotalRepetidos = document.querySelector("#totalRepetidos");
 const form = document.querySelector("form");
 
-// Recuperar as listas do localStorage
 
 const colecao = JSON.parse(localStorage.getItem("colecao")) || [];
 const repetidos = JSON.parse(localStorage.getItem("repetidos")) || [];
@@ -15,6 +14,7 @@ let totalRepetidos = repetidos.length;
 
 function guardaCarta() {
     const numero = Number(nodeInputNumero.value);
+    alert ("Olá")
 
     if (colecao.includes(numero)) {
         repetidos.push(numero);
@@ -53,7 +53,6 @@ function atualizaLista(lista, nodeUl) {
         }
     });
 
-    // Eventos dos botões Eliminar
 
     if (nodeUl === nodeUlRepetidos) {
         document.querySelectorAll(".eliminar").forEach((botao) => {
@@ -62,7 +61,6 @@ function atualizaLista(lista, nodeUl) {
 
                 repetidos.splice(indice, 1);
 
-                // Guardar a lista atualizada
 
                 localStorage.setItem("repetidos", JSON.stringify(repetidos));
 

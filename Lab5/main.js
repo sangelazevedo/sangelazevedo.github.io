@@ -1,6 +1,3 @@
-
-// 1. Variáveis
-
 const titulo = document.getElementById("titulo");
 const texto = document.getElementById("texto");
 const botao = document.getElementById("botao");
@@ -21,13 +18,10 @@ let tempo = 0;
 
 const cores = ["red", "blue", "green", "orange"];
 
-// Recuperar o contador do Local Storage
 let contador = Number(localStorage.getItem("contador")) || 0;
 
 elementoContador.textContent = "Valor: " + contador;
 
-
-// 2. Event handlers
 
 function contarCliques() {
   cliques++;
@@ -60,7 +54,6 @@ function mudarCorTeclado() {
   }
 }
 
-// Contador com Local Storage
 
 function incrementar() {
   contador++;
